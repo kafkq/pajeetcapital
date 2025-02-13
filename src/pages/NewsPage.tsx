@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Hero from '../images/hero.jpg';
 import seven from '../images/1.png';
 import one from '../images/2.png';
 import two from '../images/3.png';
@@ -13,7 +12,6 @@ import LiveTV from '../images/titlelive.png'
 import LogoFlat from '../images/brownbar.png'
 import Logo from '../pcwhite.png';
 import Coin from '../pcapitalcoin.gif';
-import ReactPlayer from "react-player";
 import StockTicker from '../components/StockTicker';
 import video1 from '../images/VideoIA1.mp4';
 import video2 from '../images/VideoIA3.mp4';
@@ -102,7 +100,7 @@ const NewsPage = () => {
               <h2 className="text-xl sm:text-3xl font-bold mb-6">Today Paper</h2>
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="border-2 border-black rounded overflow-hidden w-full sm:w-auto">
-                <video src={videoHero} className="w-full rounded video-hero" controls  autoPlay muted playsInline loop/>
+                <video src={videoHero} className="w-full rounded video-hero" controls  autoPlay muted />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg sm:text-2xl font-bold mb-4">From Mumbai to the Blockchain</h3>
