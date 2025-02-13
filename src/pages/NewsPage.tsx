@@ -90,7 +90,7 @@ const NewsPage = () => {
               <h2 className="text-xl sm:text-3xl font-bold mb-6">Today Paper</h2>
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="border-2 border-black rounded overflow-hidden w-full sm:w-auto">
-                <video src={videoHero} className="w-full rounded video-hero" controls muted />
+                <video src={videoHero} className="w-full rounded video-hero" controls  autoPlay />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg sm:text-2xl font-bold mb-4">From Mumbai to the Blockchain</h3>
