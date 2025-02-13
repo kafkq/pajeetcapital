@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.news-container {
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=2971&auto=format&fit=crop') center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.subscribe-btn {
+  background-color: #ffa500;
+  color: black;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.buy-btn {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+}
+
+main {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.main-content {
+  display: flex;
+  gap: 3rem;
+  background-color: rgba(245, 245, 220, 0.95);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  flex: 2;
+  border-right: 2px dotted rgba(0, 0, 0, 0.2);
+  padding-right: 2rem;
+}
+
+.right-column {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.today-paper-section h2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.news-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 2rem;
+}
+
+.main-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  padding: 1rem;
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.breaking-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.live-text {
+  color: #fff;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.main-article {
+  margin-bottom: 3rem;
+}
+
+.main-article h1 {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-article h2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.main-article p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.last-news h2 {
+  color: #c41e3a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #c41e3a;
+  display: inline-block;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.news-content h3 {
+  color: #c41e3a;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.featured-articles {
+  margin-top: 3rem;
+  border-top: 2px dotted rgba(0, 0, 0, 0.2);
+  padding-top: 2rem;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.feature h3 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.feature img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .left-column {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
+    padding-bottom: 2rem;
+  }
+  
+  .right-column {
+    padding-left: 0;
+  }
+  
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .news-container {
+    background-attachment: scroll;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .today-paper-section h2,
+  .main-article h2 {
+    font-size: 2rem;
+  }
+
+  .feature h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.news-footer {
+  height: 30em;
+  background-color: #1e1307;
+}
+
