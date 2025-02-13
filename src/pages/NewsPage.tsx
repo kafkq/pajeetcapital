@@ -102,7 +102,7 @@ const NewsPage = () => {
               <h2 className="text-xl sm:text-3xl font-bold mb-6">Today Paper</h2>
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="border-2 border-black rounded overflow-hidden w-full sm:w-auto">
-                <video src={videoHero} className="w-full rounded video-hero" controls />
+                <video src={videoHero} className="w-full rounded video-hero" controls  autoPlay muted playsInline loop/>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg sm:text-2xl font-bold mb-4">From Mumbai to the Blockchain</h3>
@@ -226,19 +226,19 @@ const NewsPage = () => {
           <img src={LiveTV} className="ml-4 sm:ml-8 mb-4 w-48 sm:w-auto" alt="Live TV" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4 sm:p-8">
             <div className="video-container">
-              <video src={video1} className="w-full h-auto rounded" controls />
+              <video src={video1} className="w-full h-auto rounded" controls autoPlay muted playsInline loop/>
               <h3 className="text-base sm:text-lg font-bold mt-2">SCAM GRANDMA</h3>
             </div>
             <div className="video-container">
-              <video src={video2} className="w-full h-auto rounded" controls />
+              <video src={video2} className="w-full h-auto rounded" controls autoPlay muted playsInline loop/>
               <h3 className="text-base sm:text-lg font-bold mt-2">PAJEET ATTACK</h3>
             </div>
             <div className="video-container">
-              <video src={video3} className="w-full h-auto rounded" controls />
+              <video src={video3} className="w-full h-auto rounded" controls autoPlay muted playsInline loop/>
               <h3 className="text-base sm:text-lg font-bold mt-2">LOVE WITH AGENT PAJEET</h3>
             </div>
             <div className="video-container">
-              <video src={video4} className="w-full h-auto rounded" controls />
+              <video src={video4} className="w-full h-auto rounded" controls autoPlay muted playsInline loop/>
               <h3 className="text-base sm:text-lg font-bold mt-2">PAJEET EXPLOSION</h3>
             </div>
           </div>

@@ -49,3 +49,19 @@
 .triangle-down {
   border-top: 10px solid red;
 }
+
+.stock-ticker-wrapper {
+  overflow-y: scroll; /* Enables vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  height: 100vh; /* Or the height of your ticker */
+}
+
+.stock-ticker-scroll {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  height: 100%; 
+}
+
+.stock-ticker-wrapper {
+  touch-action: pan-y; /* Enables vertical scroll on touch devices */
+}
