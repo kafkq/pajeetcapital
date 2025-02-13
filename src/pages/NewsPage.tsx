@@ -38,16 +38,6 @@ const Tickers = () => {
             <StockTicker symbol="SOL" />
             <StockTicker symbol="ETH" />
           </div>
-          <div className="stock-ticker-inner">
-            <StockTicker symbol="MSFT" />
-            <StockTicker symbol="IBM" />
-            <StockTicker symbol="AAPL" />
-            <StockTicker symbol="TSLA" />
-            <StockTicker symbol="NVDA" />
-            <StockTicker symbol="BTC" />
-            <StockTicker symbol="SOL" />
-            <StockTicker symbol="ETH" />
-          </div>
         </div>
       </div>
     );
@@ -100,7 +90,7 @@ const NewsPage = () => {
               <h2 className="text-xl sm:text-3xl font-bold mb-6">Today Paper</h2>
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="border-2 border-black rounded overflow-hidden w-full sm:w-auto">
-                <video src={videoHero} className="w-full rounded video-hero" controls  autoPlay muted />
+                <video src={videoHero} className="w-full rounded video-hero" controls muted />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg sm:text-2xl font-bold mb-4">From Mumbai to the Blockchain</h3>
