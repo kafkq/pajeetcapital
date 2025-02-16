@@ -33,6 +33,10 @@ html {
     font-size: 14px;
   }
 
+  .pajeet-coin { 
+    bottom: 5%;
+  }
+
   .mobile-logo-news {
     padding: 0;
     margin: 0;
@@ -329,14 +333,7 @@ img {
   margin: 0 0.5rem;
 }
 
-@keyframes ticker {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+
 
 /* Footer styles */
 footer {
@@ -417,6 +414,15 @@ footer nav span {
     font-size: 0.875rem;
     gap: 0.5rem;
   }
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
   .stock-ticker-wrapper {
@@ -456,32 +462,4 @@ footer nav span {
   justify-content: center;
   align-items: center;
   max-width: 100vw;
-}
-
-
-
-
-@media (max-width: 1000) {
-  .stock-ticker-scroll {
-    width: 100%;
-    overflow-x: scroll;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    animation: scroll-horizontal 20s linear infinite;
-  }
-  
-  .stock-ticker-inner {
-    display: inline-block;
-  }
-  
-  @keyframes scroll-horizontal {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
 }
