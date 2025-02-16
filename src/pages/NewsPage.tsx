@@ -1,4 +1,4 @@
-import React from "react";
+import { useWindowSize } from "react-use";
 import { Link } from 'react-router-dom';
 import seven from '../images/1.png';
 import one from '../images/2.png';
@@ -19,7 +19,6 @@ import video3 from '../images/VideoIA2.mp4';
 import video4 from '../images/VideoIA4.mp4';
 import videoHero from '../images/Pajeet Capital Final Video.mp4';
 import '../index.css';
-import { useWindowSize } from "react-use";
 
 const Tickers = () => {
   const screenSize = useWindowSize();
@@ -90,7 +89,7 @@ const NewsPage = () => {
               <h2 className="text-xl sm:text-3xl font-bold mb-6">Today Paper</h2>
               <div className="flex flex-col sm:flex-row gap-6">
                 <div className="border-2 border-black rounded overflow-hidden w-full sm:w-auto">
-                <video src={videoHero} className="w-full rounded video-hero" controls  autoPlay />
+                    <video src={videoHero} className="w-full rounded video-hero" controls autoPlay/>
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg sm:text-2xl font-bold mb-4">From Mumbai to the Blockchain</h3>
